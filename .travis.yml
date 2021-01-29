@@ -1,0 +1,3 @@
+language: matlab
+script: matlab -batch 'runMyTests'
+after_success: bash <(curl -s https://codecov.io/bash)
