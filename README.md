@@ -65,8 +65,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: matlab-actions/setup-matlab@v0
-      - uses: matlab-actions/run-tests@v0
+      - uses: matlab-actions/setup-matlab@v1
+      - uses: matlab-actions/run-tests@v1
         with:
           source-folder: source
           code-coverage-cobertura: coverage.xml
