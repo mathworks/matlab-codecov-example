@@ -24,7 +24,7 @@ Each of these pipeline definitions does four things:
 
 ```yml
 pool:
-  vmImage: Ubuntu 16.04
+  vmImage: ubuntu-latest
 steps:
   - task: InstallMATLAB@0
   - task: RunMATLABTests@0
@@ -39,12 +39,12 @@ steps:
 ```yml
 version: 2.1
 orbs:
-  matlab: mathworks/matlab@0.1.4
-  codecov: codecov/codecov@1.1.1
+  matlab: mathworks/matlab@0.4.0
+  codecov: codecov/codecov@1.2.0
 jobs:
   build:
     machine:
-      image: ubuntu-1604:201903-01
+      image: ubuntu-2004:202104-01
     steps:
       - checkout
       - matlab/install
