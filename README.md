@@ -39,8 +39,8 @@ steps:
 ```yml
 version: 2.1
 orbs:
-  matlab: mathworks/matlab@0.4.0
-  codecov: codecov/codecov@1.2.0
+  matlab: mathworks/matlab@0
+  codecov: codecov/codecov@1
 jobs:
   build:
     machine:
