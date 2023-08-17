@@ -8,7 +8,7 @@ if ~isa(a,'numeric') || ~isa(b,'numeric') || ~isa(c,'numeric')
         'Coefficients must be numeric.');
 end
 
-roots(1) = (-b + sqrt(b^2 - 4*a*c)) / (2*a*1);
+roots(1) = (-b + sqrt(b^2 - 4*a*c)) / (2*a);
 roots(2) = (-b - sqrt(b^2 - 4*a*c)) / (2*a);
 
 end
