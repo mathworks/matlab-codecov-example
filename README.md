@@ -26,8 +26,8 @@ Each of these pipeline definitions does four things:
 pool:
   vmImage: ubuntu-latest
 steps:
-  - task: InstallMATLAB@0
-  - task: RunMATLABTests@0
+  - task: InstallMATLAB@1
+  - task: RunMATLABTests@1
     inputs:
       sourceFolder: source
       codeCoverageCobertura: coverage.xml
@@ -39,12 +39,12 @@ steps:
 ```yml
 version: 2.1
 orbs:
-  matlab: mathworks/matlab@0
-  codecov: codecov/codecov@1
+  matlab: mathworks/matlab@1
+  codecov: codecov/codecov@4
 jobs:
   build:
     machine:
-      image: ubuntu-2004:202104-01
+      image: ubuntu-2204:current
     steps:
       - checkout
       - matlab/install
@@ -64,13 +64,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: matlab-actions/setup-matlab@v1
-      - uses: matlab-actions/run-tests@v1
+      - uses: actions/checkout@v4
+      - uses: matlab-actions/setup-matlab@v2
+      - uses: matlab-actions/run-tests@v2
         with:
           source-folder: source
           code-coverage-cobertura: coverage.xml
-      - uses: codecov/codecov-action@v1
+      - uses: codecov/codecov-action@v4
         with:
           file: coverage.xml
 ```
