@@ -13,4 +13,4 @@ jobs:
       - uses: codecov/codecov-action@v4
         with:
           file: coverage.xml
-          slug: davidbuzinski/matlab-codecov-example
+          token: ${{ secrets.CODECOV_TOKEN }}
