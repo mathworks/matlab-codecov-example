@@ -10,7 +10,6 @@ This example shows how to run MATLAB&reg; tests, produce a code coverage report,
 | `azure-pipelines.yml`                | A configuration example for [Azure&reg; DevOps](https://marketplace.visualstudio.com/items?itemName=MathWorks.matlab-azure-devops-extension) |
 | `.circleci/config.yml`               | A configuration example for [CircleCI&reg;](https://circleci.com/orbs/registry/orb/mathworks/matlab)
 | `.github/workflows/workflow.yml`     | A configuration example for [GitHub&reg; Actions](https://github.com/matlab-actions)
-| `.travis.yml`               | A configuration example for [Travis CI](https://docs.travis-ci.com/user/languages/matlab/) 
 
 ## Produce and Publish Coverage Reports
 Each of these pipeline definitions does four things:
@@ -88,17 +87,6 @@ jobs:
         with:
           file: coverage.xml
 ```
-
-### Travis CI
-
-```yml
-language: matlab
-script: matlab -batch 'runMyTests'
-after_success: bash <(curl -s https://codecov.io/bash)
-```
-
-## Caveats
-* Currently, MATLAB builds that use cloud-hosted agents are available only for public projects.
 
 ## Links
 - [Community Boards](https://community.codecov.io)
