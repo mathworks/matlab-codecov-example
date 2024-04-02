@@ -20,4 +20,4 @@ steps:
       # upload to Codecov 
       shasum -a 256 -c codecov.SHA256SUM
       sudo chmod +x codecov
-      ./codecov upload-process -t $(CODECOV_TOKEN) -r davidbuzinski/matlab-codecov-example
+      ./codecov upload-process -t $(CODECOV_TOKEN)
