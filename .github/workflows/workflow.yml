@@ -10,7 +10,7 @@ jobs:
         with:
           source-folder: source
           code-coverage-cobertura: coverage.xml
-      - uses: codecov/codecov-action@v4.0.1
+      - uses: codecov/codecov-action@v4
         with:
           file: coverage.xml
           token: ${{ secrets.CODECOV_TOKEN }}
