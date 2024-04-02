@@ -1,12 +1,12 @@
 # Use MATLAB with [Codecov](https://codecov.io)
 
-This example shows how to run MATLAB&reg; tests, produce a code coverage report, and upload the report to Codecov. The repository includes these files.
+This example shows how to run MATLAB&reg; tests, produce code coverage results, and upload the results to Codecov. The repository includes these files.
 
 | **File Path**                        | **Description**                                                                                                                                       |
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source/quadraticSolver.m` | A function that solves quadratic equations                                                                                            |
 | `tests/SolverTest.m`      | A class that tests the `quadraticSolver` function                                                                                          |
-| `runMyTests.m`      | A script that creates a test suite and a test runner that outputs a Cobertura code coverage report                                                                                          |
+| `runMyTests.m`      | A script that creates a test suite and a test runner that produces code coverage results in Cobertura XML format                                                                                          |
 | `azure-pipelines.yml`                | A configuration example for [Azure&reg; DevOps](https://marketplace.visualstudio.com/items?itemName=MathWorks.matlab-azure-devops-extension) |
 | `.circleci/config.yml`               | A configuration example for [CircleCI&reg;](https://circleci.com/orbs/registry/orb/mathworks/matlab)
 | `.github/workflows/workflow.yml`     | A configuration example for [GitHub&reg; Actions](https://github.com/matlab-actions)
@@ -16,7 +16,7 @@ Each of these pipeline definitions does four things:
 
 1) Install the latest MATLAB release on a Linux&reg;-based build agent.
 2) Run all MATLAB tests in the root of your repository, including its subfolders.
-3) Produce a code coverage report in Cobertura XML format for the `source` folder.
+3) Produce code coverage results in Cobertura XML format for the `source` folder.
 4) Upload the produced artifact to Codecov.
 
 ### Azure DevOps
