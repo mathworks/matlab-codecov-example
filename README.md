@@ -94,5 +94,9 @@ jobs:
 - [Documentation](https://docs.codecov.io)
 - [Continuous Integration with MATLAB and Simulink](https://www.mathworks.com/solutions/continuous-integration.html)
 
-## Contact Us
-If you have any questions or suggestions, please contact MathWorks&reg; at [continuous-integration@mathworks.com](mailto:continuous-integration@mathworks.com).
+## Feedback and Support
+If you encounter a product licensing issue, consider requesting a [MATLAB batch licensing token](https://github.com/mathworks-ref-arch/matlab-dockerfile/blob/main/alternates/non-interactive/MATLAB-BATCH.md#matlab-batch-licensing-token) by submitting the [MATLAB Batch Licensing Pilot](https://www.mathworks.com/support/batch-tokens.html) form.
+
+If you have an enhancement request or other feedback, create an issue on the [Issues](https://github.com/mathworks/matlab-codecov-example/issues) page.
+
+For support, contact [MathWorks Technical Support](https://www.mathworks.com/support/contact_us.html).
