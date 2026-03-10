@@ -1,4 +1,4 @@
-# Use MATLAB with [Codecov](https://codecov.io)
+# Use MATLAB with [Codecov](https://about.codecov.io/)
 
 This example shows how to run MATLAB&reg; tests, produce code coverage results, and upload the results to Codecov. The repository includes these files.
 
